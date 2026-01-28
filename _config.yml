@@ -1,0 +1,49 @@
+# Site settings
+title: INIT1 - Kevin Cauchois
+description: >-
+  CTO externalisé, Expert IA et Formations à Rouen, Normandie.
+  Accompagnement d'équipes de développement, création d'applications web,
+  formations Intelligence Artificielle.
+url: "https://www.init-one.fr"
+baseurl: ""
+
+# Author
+author:
+  name: Kevin Cauchois
+  email: kevin@init-one.fr
+  linkedin: https://www.linkedin.com/in/kcauchois/
+  location: Rouen, Normandie, France
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Sass
+sass:
+  style: compressed
+  sass_dir: _sass
+
+# Exclude from build
+exclude:
+  - node_modules
+  - vendor
+  - package.json
+  - package-lock.json
+  - postcss.config.js
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .github
+  - .bundle
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+# Plugins (GitHub Pages compatible)
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap

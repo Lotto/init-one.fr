@@ -1,0 +1,15 @@
+{
+  "name": "init-one-fr",
+  "version": "1.0.0",
+  "description": "Site web INIT1 - Kevin Cauchois, CTO externalisé",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./assets/css/main.css -o ./assets/css/output.css --watch",
+    "build": "npx @tailwindcss/cli -i ./assets/css/main.css -o ./assets/css/output.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.0.0",
+    "@tailwindcss/cli": "^4.0.0"
+  },
+  "author": "Kevin Cauchois",
+  "license": "MIT"
+}

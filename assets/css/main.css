@@ -1,0 +1,250 @@
+@import "tailwindcss";
+
+/* === SOURCES POUR TAILWIND === */
+@source "../../_includes/**/*.html";
+@source "../../_layouts/**/*.html";
+@source "../../*.html";
+
+/* === THEME PERSONNALISÉ === */
+@theme {
+  /* Couleurs de surface (Dark Mode) */
+  --color-surface-900: oklch(0.13 0.02 260);
+  --color-surface-800: oklch(0.16 0.02 260);
+  --color-surface-700: oklch(0.20 0.02 260);
+  --color-surface-600: oklch(0.25 0.02 260);
+
+  /* Couleurs d'accent */
+  --color-accent-amber: oklch(0.82 0.18 75);
+  --color-accent-violet: oklch(0.65 0.25 290);
+  --color-accent-cyan: oklch(0.75 0.15 195);
+  --color-accent-emerald: oklch(0.70 0.18 160);
+  --color-accent-rose: oklch(0.70 0.20 350);
+
+  /* Couleurs de texte */
+  --color-text-primary: oklch(0.98 0 0);
+  --color-text-secondary: oklch(0.70 0 0);
+  --color-text-muted: oklch(0.50 0 0);
+
+  /* Typographie */
+  --font-display: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+
+  /* Border radius personnalisé */
+  --radius-bento: 1.5rem;
+  --radius-card: 1rem;
+  --radius-pill: 9999px;
+
+  /* Animations */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-glow: pulse-glow 2s ease-in-out infinite;
+  --animate-gradient: gradient-shift 8s ease infinite;
+}
+
+/* === KEYFRAMES === */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* === STYLES DE BASE === */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-surface-900 text-text-primary font-sans antialiased;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(139, 92, 246, 0.15), transparent),
+      radial-gradient(ellipse 60% 40% at 100% 0%, rgba(245, 158, 11, 0.1), transparent);
+  }
+
+  ::selection {
+    @apply bg-accent-violet/30 text-text-primary;
+  }
+}
+
+/* === COMPOSANTS === */
+@layer components {
+  /* Carte Bentobox */
+  .bento-card {
+    @apply bg-surface-800/80 backdrop-blur-sm rounded-bento p-6
+           border border-white/5
+           transition-all duration-300 ease-out
+           hover:border-white/10 hover:bg-surface-700/80
+           hover:shadow-lg hover:shadow-accent-violet/5
+           hover:-translate-y-1;
+  }
+
+  /* Carte Glassmorphism */
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-xl rounded-bento p-6
+           border border-white/10
+           transition-all duration-300
+           hover:bg-white/10 hover:border-white/15;
+  }
+
+  /* Bouton primaire */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3
+           bg-gradient-to-r from-accent-amber to-accent-violet
+           text-white font-semibold rounded-full
+           transition-all duration-300
+           hover:shadow-lg hover:shadow-accent-amber/25
+           hover:scale-105 active:scale-95;
+  }
+
+  /* Bouton secondaire */
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3
+           bg-white/5 backdrop-blur-sm
+           text-text-primary font-medium rounded-full
+           border border-white/10
+           transition-all duration-300
+           hover:bg-white/10 hover:border-white/20;
+  }
+
+  /* Badge */
+  .badge {
+    @apply inline-flex items-center gap-1.5 px-3 py-1
+           text-xs font-medium rounded-full
+           bg-white/5 border border-white/10
+           transition-all duration-200
+           hover:bg-white/10;
+  }
+
+  .badge-amber {
+    @apply bg-accent-amber/10 text-accent-amber border-accent-amber/20;
+  }
+
+  .badge-violet {
+    @apply bg-accent-violet/10 text-accent-violet border-accent-violet/20;
+  }
+
+  .badge-cyan {
+    @apply bg-accent-cyan/10 text-accent-cyan border-accent-cyan/20;
+  }
+
+  .badge-emerald {
+    @apply bg-accent-emerald/10 text-accent-emerald border-accent-emerald/20;
+  }
+
+  /* Texte gradient */
+  .gradient-text {
+    @apply bg-gradient-to-r from-accent-amber via-accent-violet to-accent-cyan
+           bg-clip-text text-transparent;
+  }
+
+  /* Lien */
+  .link {
+    @apply text-text-secondary hover:text-text-primary
+           transition-colors duration-200
+           underline-offset-4 hover:underline;
+  }
+
+  /* Grille Bentobox */
+  .bento-grid {
+    @apply grid gap-4 md:gap-6;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(180px, auto);
+  }
+
+  .bento-large {
+    @apply col-span-4 md:col-span-2 row-span-2;
+  }
+
+  .bento-wide {
+    @apply col-span-4 md:col-span-2;
+  }
+
+  .bento-tall {
+    @apply col-span-4 md:col-span-1 row-span-2;
+  }
+
+  .bento-default {
+    @apply col-span-4 md:col-span-1;
+  }
+
+  /* Animation d'apparition */
+  .animate-fade-in-up {
+    animation: fade-in-up 0.6s ease-out forwards;
+  }
+
+  .animate-slide-in-right {
+    animation: slide-in-right 0.6s ease-out forwards;
+  }
+
+  /* Glow effects */
+  .glow-amber {
+    @apply hover:shadow-[0_0_40px_-10px_rgba(245,158,11,0.4)];
+  }
+
+  .glow-violet {
+    @apply hover:shadow-[0_0_40px_-10px_rgba(139,92,246,0.4)];
+  }
+
+  .glow-cyan {
+    @apply hover:shadow-[0_0_40px_-10px_rgba(34,211,238,0.4)];
+  }
+}
+
+/* === UTILITAIRES === */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animation-delay-100 {
+    animation-delay: 100ms;
+  }
+
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .animation-delay-500 {
+    animation-delay: 500ms;
+  }
+}

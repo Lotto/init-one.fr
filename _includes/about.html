@@ -1,0 +1,70 @@
+<section id="about" class="py-24 px-4">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <!-- Photo / Visual -->
+      <div class="relative">
+        <div class="aspect-square max-w-md mx-auto">
+          <!-- Photo placeholder - à remplacer par la vraie photo -->
+          <div class="w-full h-full rounded-3xl bg-gradient-to-br from-surface-700 to-surface-800 border border-white/5 overflow-hidden">
+            <!-- Si photo disponible, utiliser: -->
+            <!-- <img src="{{ '/assets/images/kevin-cauchois.jpg' | relative_url }}" alt="Kevin Cauchois" class="w-full h-full object-cover"> -->
+
+            <!-- Placeholder visuel -->
+            <div class="w-full h-full flex items-center justify-center">
+              <div class="text-center">
+                <div class="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-accent-amber to-accent-violet flex items-center justify-center">
+                  <span class="text-5xl font-bold font-display text-white">KC</span>
+                </div>
+                <p class="text-text-muted text-sm">Photo à venir</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Decorative elements -->
+        <div class="absolute -top-4 -right-4 w-24 h-24 bg-accent-amber/20 rounded-full blur-2xl"></div>
+        <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-accent-violet/20 rounded-full blur-2xl"></div>
+      </div>
+
+      <!-- Content -->
+      <div>
+        <span class="badge badge-violet mb-4">À propos</span>
+        <h2 class="text-3xl sm:text-4xl font-bold font-display mb-6">
+          Kevin <span class="gradient-text">Cauchois</span>
+        </h2>
+
+        <div class="space-y-4 text-text-secondary mb-8">
+          <p>
+            Passionné du web et de tout ce qui gravite autour, j'accompagne depuis plusieurs années des équipes de développement dans leur croissance et leurs défis techniques.
+          </p>
+          <p>
+            En tant que <strong class="text-text-primary">CTO externalisé</strong>, j'apporte une vision stratégique et opérationnelle à vos projets. Je vous aide à faire les bons choix techniques, à structurer vos équipes et à adopter les meilleures pratiques de développement.
+          </p>
+          <p>
+            Spécialisé dans l'<strong class="text-text-primary">Intelligence Artificielle</strong>, je propose également des formations pour vous aider à comprendre et intégrer l'IA dans vos processus, que vous soyez développeur ou non.
+          </p>
+        </div>
+
+        <!-- Stats / Quick facts -->
+        <div class="grid grid-cols-2 gap-4 mb-8">
+          <div class="glass-card !p-4">
+            <div class="text-2xl font-bold font-display gradient-text">10+</div>
+            <div class="text-sm text-text-muted">Années d'expérience</div>
+          </div>
+          <div class="glass-card !p-4">
+            <div class="text-2xl font-bold font-display gradient-text">50+</div>
+            <div class="text-sm text-text-muted">Projets accompagnés</div>
+          </div>
+        </div>
+
+        <!-- LinkedIn CTA -->
+        <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener" class="btn-secondary inline-flex">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+          Voir mon profil LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
