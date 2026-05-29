@@ -17,3 +17,99 @@
 
 <!-- SEO -->
 {% seo %}
+
+<!-- Données structurées : entité métier (page d'accueil uniquement) -->
+{% if page.url == "/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://www.init-one.fr/#business",
+      "name": "INIT1",
+      "alternateName": "INIT1 - Kevin Cauchois",
+      "description": "CTO externalisé, Expert IA et formations à l'Intelligence Artificielle à Rouen et en Normandie. Accompagnement d'équipes de développement, création d'applications web, hébergement et CI/CD.",
+      "url": "https://www.init-one.fr",
+      "image": "https://www.init-one.fr/assets/images/k.jpg",
+      "email": "contact@init-one.fr",
+      "founder": { "@id": "https://www.init-one.fr/#kevin" },
+      "employee": { "@id": "https://www.init-one.fr/#kevin" },
+      "parentOrganization": { "@id": "https://www.init-one.fr/#org" },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "45 rue Thomas Edison",
+        "postalCode": "76650",
+        "addressLocality": "Petit-Couronne",
+        "addressRegion": "Normandie",
+        "addressCountry": "FR"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Rouen" },
+        { "@type": "AdministrativeArea", "name": "Normandie" }
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "contact@init-one.fr",
+        "contactType": "customer support",
+        "availableLanguage": ["French"]
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/kcauchois/"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services INIT1",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "CTO externalisé", "description": "Accompagnement stratégique et opérationnel des équipes de développement : architecture, choix techniques, code reviews, best practices, mentorat et processus agiles." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Expert IA", "description": "Conseil et intégration de solutions d'Intelligence Artificielle : Claude, LLMs, automatisation intelligente." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Formations IA", "description": "Formations à l'Intelligence Artificielle pour tous les profils : formation généraliste IA et formation développeurs (APIs, Claude, LLMs)." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Applications web", "description": "Développement d'applications web modernes avec React, Supabase, Node.js et .NET." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hébergement & CI/CD", "description": "Mise en place d'infrastructure, déploiement automatisé et intégration continue." } }
+        ]
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.init-one.fr/#org",
+      "name": "INIT1",
+      "legalName": "INIT1",
+      "description": "SASU (Société par actions simplifiée unipersonnelle) au capital de 1 000 €.",
+      "url": "https://www.init-one.fr",
+      "email": "contact@init-one.fr",
+      "vatID": "FR16920304250",
+      "taxID": "92030425000029",
+      "founder": { "@id": "https://www.init-one.fr/#kevin" },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "45 rue Thomas Edison",
+        "postalCode": "76650",
+        "addressLocality": "Petit-Couronne",
+        "addressRegion": "Normandie",
+        "addressCountry": "FR"
+      },
+      "identifier": [
+        { "@type": "PropertyValue", "propertyID": "SIREN", "value": "920304250" },
+        { "@type": "PropertyValue", "propertyID": "SIRET", "value": "92030425000029" },
+        { "@type": "PropertyValue", "propertyID": "RCS", "value": "Rouen 920 304 250" }
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/kcauchois/"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.init-one.fr/#kevin",
+      "name": "Kevin Cauchois",
+      "jobTitle": "CTO externalisé & Expert IA",
+      "image": "https://www.init-one.fr/assets/images/k.jpg",
+      "url": "https://www.init-one.fr",
+      "worksFor": { "@id": "https://www.init-one.fr/#org" },
+      "sameAs": [
+        "https://www.linkedin.com/in/kcauchois/"
+      ]
+    }
+  ]
+}
+</script>
+{% endif %}

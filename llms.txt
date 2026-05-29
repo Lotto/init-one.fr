@@ -1,0 +1,24 @@
+# INIT1 — Kevin Cauchois
+
+> CTO externalisé, Expert IA et formateur basé à Rouen (Normandie, France). INIT1 (SASU) accompagne les équipes de développement et forme les entreprises à l'Intelligence Artificielle, de la stratégie à l'implémentation.
+
+## À propos
+
+- **Qu'est-ce qu'un CTO externalisé ?** Un directeur technique à temps partagé qui apporte une vision stratégique et opérationnelle à une entreprise sans recruter un CTO à plein temps : architecture, choix techniques, code reviews, bonnes pratiques, montée en compétences des équipes et processus agiles.
+- **Qui ?** Kevin Cauchois, fondateur et président d'INIT1 (SASU), CTO externalisé et Expert en Intelligence Artificielle.
+- **Où ?** Basé à Petit-Couronne (76650), interventions à Rouen, en Normandie et à distance.
+- **Contact :** contact@init-one.fr — https://www.linkedin.com/in/kcauchois/
+
+## Services
+
+- **CTO externalisé :** accompagnement stratégique et opérationnel des équipes de développement (architecture, code reviews, best practices, mentorat, processus agiles).
+- **Expert IA :** conseil et intégration de solutions d'Intelligence Artificielle (Claude, LLMs, automatisation).
+- **Formations IA :** formation généraliste pour tous les profils et formation dédiée aux développeurs (APIs, Claude, LLMs).
+- **Développement d'applications web :** React, Supabase, Node.js, .NET.
+- **Hébergement & CI/CD :** infrastructure, déploiement automatisé et intégration continue.
+
+## Pages
+
+- [Accueil](https://www.init-one.fr/) : présentation des services, technologies et profil.
+- [Mentions légales](https://www.init-one.fr/mentions-legales/) : informations sur l'éditeur (INIT1 SASU) et l'hébergeur.
+- [Politique de confidentialité](https://www.init-one.fr/politique-confidentialite/) : traitement des données personnelles (RGPD).

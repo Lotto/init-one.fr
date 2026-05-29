@@ -6,6 +6,7 @@ description: >-
   formations Intelligence Artificielle.
 url: "https://www.init-one.fr"
 baseurl: ""
+lang: fr_FR
 
 # Author
 author:
