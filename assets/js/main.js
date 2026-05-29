@@ -46,11 +46,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, observerOptions);
 
-  // Observe all bento cards
-  document.querySelectorAll('.bento-card, .glass-card').forEach(card => {
-    card.style.opacity = '0';
-    observer.observe(card);
-  });
+  // Observe all bento cards (sauf si l'utilisateur préfère un mouvement réduit)
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!prefersReducedMotion) {
+    document.querySelectorAll('.bento-card, .glass-card').forEach(card => {
+      card.style.opacity = '0';
+      observer.observe(card);
+    });
+  }
 
   // Header scroll effect
   const header = document.querySelector('header');

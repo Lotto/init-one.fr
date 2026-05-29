@@ -96,6 +96,38 @@
   ::selection {
     @apply bg-accent-violet/30 text-text-primary;
   }
+
+  /* Focus clavier visible (RGAA 10.7 / WCAG 2.4.7) */
+  :focus-visible {
+    outline: 2px solid var(--color-accent-amber);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  /* Lien d'évitement (RGAA 12.7) — masqué jusqu'au focus clavier */
+  .skip-link {
+    @apply fixed left-4 z-[100] px-4 py-2 rounded-full
+           bg-accent-amber text-surface-900 font-semibold text-sm
+           transition-all duration-200;
+    top: -4rem;
+  }
+  .skip-link:focus {
+    top: 1rem;
+  }
+}
+
+/* Respect de la préférence "mouvement réduit" (RGAA 13.8 / WCAG 2.3.3) */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 /* === COMPOSANTS === */

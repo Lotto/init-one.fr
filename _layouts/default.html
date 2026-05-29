@@ -4,9 +4,11 @@
   {% include head.html %}
 </head>
 <body class="min-h-screen flex flex-col">
+  <a href="#contenu" class="skip-link">Aller au contenu</a>
+
   {% include header.html %}
 
-  <main class="flex-1 pt-24">
+  <main id="contenu" class="flex-1 pt-24">
     {{ content }}
   </main>
 
