@@ -4,10 +4,10 @@ description: Mentions légales du site init-one.fr - INIT1, Kevin Cauchois, CTO 
 permalink: /mentions-legales/
 ---
 
-<article class="max-w-3xl mx-auto px-4 py-16">
-  <header class="mb-12">
-    <span class="badge badge-violet mb-4">Informations légales</span>
-    <h1 class="text-3xl sm:text-4xl font-bold font-display mb-4">
+<article class="max-w-3xl mx-auto px-4 py-16 sm:py-20">
+  <header class="mb-12 text-center">
+    <span class="badge badge-violet mb-5">Informations légales</span>
+    <h1 class="text-4xl sm:text-5xl font-bold font-display mb-4">
       Mentions <span class="gradient-text">légales</span>
     </h1>
     <p class="text-text-muted text-sm">
@@ -15,89 +15,135 @@ permalink: /mentions-legales/
     </p>
   </header>
 
-  <div class="space-y-10 text-text-secondary leading-relaxed">
+  <div class="space-y-6">
 
-    <section>
-      <h2 class="text-xl font-bold font-display text-text-primary mb-4">1. Éditeur du site</h2>
-      <p class="mb-3">
+    <section class="glass-card !p-6 sm:!p-8">
+      <h2 class="flex items-center gap-3 text-lg sm:text-xl font-bold font-display text-text-primary mb-6">
+        <span class="grid place-items-center shrink-0 w-8 h-8 rounded-full bg-gradient-to-br from-accent-amber to-accent-violet text-white text-sm font-bold">1</span>
+        Éditeur du site
+      </h2>
+      <p class="text-text-secondary mb-5">
         Le site <strong class="text-text-primary">init-one.fr</strong> (ci-après « le Site ») est édité par :
       </p>
-      <ul class="space-y-1">
-        <li><strong class="text-text-primary">INIT1</strong> — Société par actions simplifiée unipersonnelle (SASU)</li>
-        <li>Capital social : 1 000 €</li>
-        <li>Siège social : 45 rue Thomas Edison, 76650 Petit-Couronne, France</li>
-        <li>SIREN : 920 304 250 — SIRET (siège) : 920 304 250 00029</li>
-        <li>Immatriculée au RCS de Rouen sous le numéro 920 304 250</li>
-        <li>Numéro de TVA intracommunautaire : FR16 920 304 250</li>
-        <li>Représentant légal : Kevin Cauchois, Président</li>
-        <li>Adresse e-mail : <a href="mailto:{{ site.author.email }}" class="text-accent-amber hover:underline">{{ site.author.email }}</a></li>
-      </ul>
+      <dl class="grid sm:grid-cols-[200px_1fr] gap-x-6 gap-y-3 text-sm">
+        <dt class="text-text-muted">Société</dt>
+        <dd class="text-text-primary">INIT1 — SASU (Société par actions simplifiée unipersonnelle)</dd>
+
+        <dt class="text-text-muted">Capital social</dt>
+        <dd class="text-text-primary">1 000 €</dd>
+
+        <dt class="text-text-muted">Siège social</dt>
+        <dd class="text-text-primary">45 rue Thomas Edison, 76650 Petit-Couronne, France</dd>
+
+        <dt class="text-text-muted">SIREN / SIRET</dt>
+        <dd class="text-text-primary">920 304 250 — siège : 920 304 250 00029</dd>
+
+        <dt class="text-text-muted">RCS</dt>
+        <dd class="text-text-primary">Rouen 920 304 250</dd>
+
+        <dt class="text-text-muted">TVA intracommunautaire</dt>
+        <dd class="text-text-primary">FR16 920 304 250</dd>
+
+        <dt class="text-text-muted">Représentant légal</dt>
+        <dd class="text-text-primary">Kevin Cauchois, Président</dd>
+
+        <dt class="text-text-muted">E-mail</dt>
+        <dd><a href="mailto:{{ site.author.email }}" class="text-accent-amber hover:underline">{{ site.author.email }}</a></dd>
+      </dl>
     </section>
 
-    <section>
-      <h2 class="text-xl font-bold font-display text-text-primary mb-4">2. Directeur de la publication</h2>
-      <p>
-        Le directeur de la publication est <strong class="text-text-primary">Kevin Cauchois</strong>, en qualité d'éditeur du Site.
-      </p>
-    </section>
-
-    <section>
-      <h2 class="text-xl font-bold font-display text-text-primary mb-4">3. Hébergement</h2>
-      <p class="mb-3">
-        Le Site est hébergé par :
-      </p>
-      <ul class="space-y-1">
-        <li><strong class="text-text-primary">GitHub, Inc.</strong> (service GitHub Pages)</li>
-        <li>88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis</li>
-        <li>Site web : <a href="https://github.com" target="_blank" rel="noopener" class="text-accent-amber hover:underline">github.com</a></li>
-      </ul>
-    </section>
-
-    <section>
-      <h2 class="text-xl font-bold font-display text-text-primary mb-4">4. Propriété intellectuelle</h2>
-      <p class="mb-3">
-        L'ensemble des contenus présents sur le Site (textes, graphismes, logo, icônes, images, structure, mise en page) est la propriété exclusive de la société INIT1, sauf mention contraire, et est protégé par les lois françaises et internationales relatives à la propriété intellectuelle.
-      </p>
-      <p>
-        Toute reproduction, représentation, modification, publication ou adaptation de tout ou partie des éléments du Site, quel que soit le moyen ou le procédé utilisé, est interdite sans autorisation écrite préalable de l'éditeur.
+    <section class="glass-card !p-6 sm:!p-8">
+      <h2 class="flex items-center gap-3 text-lg sm:text-xl font-bold font-display text-text-primary mb-4">
+        <span class="grid place-items-center shrink-0 w-8 h-8 rounded-full bg-gradient-to-br from-accent-amber to-accent-violet text-white text-sm font-bold">2</span>
+        Directeur de la publication
+      </h2>
+      <p class="text-text-secondary leading-relaxed">
+        Le directeur de la publication est <strong class="text-text-primary">Kevin Cauchois</strong>, en qualité de représentant légal de la société éditrice.
       </p>
     </section>
 
-    <section>
-      <h2 class="text-xl font-bold font-display text-text-primary mb-4">5. Responsabilité</h2>
-      <p class="mb-3">
-        Les informations diffusées sur le Site sont fournies à titre indicatif. L'éditeur s'efforce d'assurer l'exactitude et la mise à jour des informations, mais ne peut garantir l'exactitude, la complétude ou l'actualité des contenus mis à disposition.
-      </p>
-      <p>
-        L'éditeur ne saurait être tenu responsable des dommages directs ou indirects résultant de l'accès au Site ou de son utilisation, y compris en cas d'indisponibilité, de perte de données ou de présence de virus.
-      </p>
+    <section class="glass-card !p-6 sm:!p-8">
+      <h2 class="flex items-center gap-3 text-lg sm:text-xl font-bold font-display text-text-primary mb-6">
+        <span class="grid place-items-center shrink-0 w-8 h-8 rounded-full bg-gradient-to-br from-accent-amber to-accent-violet text-white text-sm font-bold">3</span>
+        Hébergement
+      </h2>
+      <p class="text-text-secondary mb-5">Le Site est hébergé par :</p>
+      <dl class="grid sm:grid-cols-[200px_1fr] gap-x-6 gap-y-3 text-sm">
+        <dt class="text-text-muted">Hébergeur</dt>
+        <dd class="text-text-primary">GitHub, Inc. (service GitHub Pages)</dd>
+
+        <dt class="text-text-muted">Adresse</dt>
+        <dd class="text-text-primary">88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis</dd>
+
+        <dt class="text-text-muted">Site web</dt>
+        <dd><a href="https://github.com" target="_blank" rel="noopener" class="text-accent-amber hover:underline">github.com</a></dd>
+      </dl>
     </section>
 
-    <section>
-      <h2 class="text-xl font-bold font-display text-text-primary mb-4">6. Liens hypertextes</h2>
-      <p>
+    <section class="glass-card !p-6 sm:!p-8">
+      <h2 class="flex items-center gap-3 text-lg sm:text-xl font-bold font-display text-text-primary mb-4">
+        <span class="grid place-items-center shrink-0 w-8 h-8 rounded-full bg-gradient-to-br from-accent-amber to-accent-violet text-white text-sm font-bold">4</span>
+        Propriété intellectuelle
+      </h2>
+      <div class="space-y-4 text-text-secondary leading-relaxed">
+        <p>
+          L'ensemble des contenus présents sur le Site (textes, graphismes, logo, icônes, images, structure, mise en page) est la propriété exclusive de la société INIT1, sauf mention contraire, et est protégé par les lois françaises et internationales relatives à la propriété intellectuelle.
+        </p>
+        <p>
+          Toute reproduction, représentation, modification, publication ou adaptation de tout ou partie des éléments du Site, quel que soit le moyen ou le procédé utilisé, est interdite sans autorisation écrite préalable de l'éditeur.
+        </p>
+      </div>
+    </section>
+
+    <section class="glass-card !p-6 sm:!p-8">
+      <h2 class="flex items-center gap-3 text-lg sm:text-xl font-bold font-display text-text-primary mb-4">
+        <span class="grid place-items-center shrink-0 w-8 h-8 rounded-full bg-gradient-to-br from-accent-amber to-accent-violet text-white text-sm font-bold">5</span>
+        Responsabilité
+      </h2>
+      <div class="space-y-4 text-text-secondary leading-relaxed">
+        <p>
+          Les informations diffusées sur le Site sont fournies à titre indicatif. L'éditeur s'efforce d'assurer l'exactitude et la mise à jour des informations, mais ne peut garantir l'exactitude, la complétude ou l'actualité des contenus mis à disposition.
+        </p>
+        <p>
+          L'éditeur ne saurait être tenu responsable des dommages directs ou indirects résultant de l'accès au Site ou de son utilisation, y compris en cas d'indisponibilité, de perte de données ou de présence de virus.
+        </p>
+      </div>
+    </section>
+
+    <section class="glass-card !p-6 sm:!p-8">
+      <h2 class="flex items-center gap-3 text-lg sm:text-xl font-bold font-display text-text-primary mb-4">
+        <span class="grid place-items-center shrink-0 w-8 h-8 rounded-full bg-gradient-to-br from-accent-amber to-accent-violet text-white text-sm font-bold">6</span>
+        Liens hypertextes
+      </h2>
+      <p class="text-text-secondary leading-relaxed">
         Le Site peut contenir des liens vers des sites tiers (notamment LinkedIn). L'éditeur n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu ou aux pratiques de confidentialité qui leur sont propres.
       </p>
     </section>
 
-    <section>
-      <h2 class="text-xl font-bold font-display text-text-primary mb-4">7. Données personnelles</h2>
-      <p>
+    <section class="glass-card !p-6 sm:!p-8">
+      <h2 class="flex items-center gap-3 text-lg sm:text-xl font-bold font-display text-text-primary mb-4">
+        <span class="grid place-items-center shrink-0 w-8 h-8 rounded-full bg-gradient-to-br from-accent-amber to-accent-violet text-white text-sm font-bold">7</span>
+        Données personnelles
+      </h2>
+      <p class="text-text-secondary leading-relaxed">
         Le traitement de vos données personnelles est décrit dans notre
         <a href="/politique-confidentialite/" class="text-accent-amber hover:underline">Politique de confidentialité</a>.
       </p>
     </section>
 
-    <section>
-      <h2 class="text-xl font-bold font-display text-text-primary mb-4">8. Droit applicable</h2>
-      <p>
+    <section class="glass-card !p-6 sm:!p-8">
+      <h2 class="flex items-center gap-3 text-lg sm:text-xl font-bold font-display text-text-primary mb-4">
+        <span class="grid place-items-center shrink-0 w-8 h-8 rounded-full bg-gradient-to-br from-accent-amber to-accent-violet text-white text-sm font-bold">8</span>
+        Droit applicable
+      </h2>
+      <p class="text-text-secondary leading-relaxed">
         Les présentes mentions légales sont régies par le droit français. En cas de litige, et à défaut de résolution amiable, les tribunaux français seront seuls compétents.
       </p>
     </section>
 
   </div>
 
-  <div class="mt-16 pt-8 border-t border-white/5">
-    <a href="/" class="text-sm text-text-muted hover:text-text-primary transition-colors">&larr; Retour à l'accueil</a>
+  <div class="mt-12 text-center">
+    <a href="/" class="btn-secondary">&larr; Retour à l'accueil</a>
   </div>
 </article>
